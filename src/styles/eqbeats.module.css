@@ -1,0 +1,26 @@
+.eqbeat {
+  margin: 9rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.eqbeat h3 {
+  font-size: 2.5rem;
+  padding-left: 5rem;
+  white-space: nowrap;
+  width: 30%;
+}
+.eqbeat p {
+  width: 60%;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  background-image: linear-gradient();
+  width: 28%;
+  opacity: 0.6;
+  line-height: 2rem;
+}

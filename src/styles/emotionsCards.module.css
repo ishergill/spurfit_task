@@ -1,0 +1,78 @@
+.emotions {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  margin-top: 6rem;
+  font-size: 1rem;
+  gap: 0rem;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+.emotions_wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.emotions h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.emotions .cards {
+  gap: 1.8rem;
+  overflow-x: scroll;
+  display: flex;
+  scroll-behavior: smooth;
+  display: flex;
+  height: 18rem;
+  align-items: center;
+}
+.emotions .cards::-webkit-scrollbar {
+  display: none;
+
+}
+.emotions .card {
+  height: 11rem;
+  width: 15rem;
+  background-color: #d4b6ef;
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 0.5rem;
+  flex: none;
+  opacity: 1;
+
+}
+
+.emotions .card h3 {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.emotions .card p {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.emotions .backbtn img,
+.emotions .frontbtn img {
+  height: 2.5rem;
+}
+
+.icon1 {
+  height: 4rem;
+  width: auto;
+  position: relative;
+}
+.emotions_title {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.cardIcon {
+  font-size: 2em;
+}

@@ -1,22 +1,19 @@
-import logo from './logo.svg';
+// !components
+import EmotionCards from './components/EmotionCards';
+import Eqbeats from './components/Eqbeats';
+import Header from './components/Header';
+import MeetAhead from './components/MeetAhead';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Header/>
+      <Eqbeats/>
+      <EmotionCards/>
+      <MeetAhead/>
     </div>
   );
 }

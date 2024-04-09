@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "It's not as easy as 1-2-3.",
+    "description": "The journey of change may be long, but our sessions are quick. We get to the point and tell you what you want to know (and nothing more)."
+  },
+  {
+    "id": 2,
+    "title": "Old habits are hard to break.",
+    "description": "And bad behaviors die hard. Fortunately, we give you great, science-backed techniques to use."
+  },
+  {
+    "id": 3,
+    "title": "You and your motivation don't have a long-term relationship.",
+    "description": "Luckily, we can proactively prepare you for the marathon, not just the race. Effective, memorable exercises will help you stick to your goals."
+  },
+  {
+    "id": 4,
+    "title": "Books just don't offer particular solutions.",
+    "description": "Remember when you learned to ride a bike by just reading? We don't either. We help you take concrete small steps toward your goals. Learning just a bit, then immediately springs into action."
+  },
+  {
+    "id": 5,
+    "title": "Inspiration is great but then what?",
+    "description": "We make sure your energy from all the content you consume does not fizzle out."
+  }
+]

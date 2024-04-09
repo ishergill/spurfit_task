@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "title": "You argue with colleague1",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
+        "icon": "😂"
+    },
+    {
+        "id": 2,
+        "title": "You argue with colleague2",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
+        "icon": "🤗"
+    },
+    {
+        "id": 3,
+        "title": "You argue with colleague3",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
+        "icon": "🥰"
+    },
+    {
+        "id": 4,
+        "title": "You argue with colleague4",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
+        "icon": "😤"
+    },
+    {
+        "id": 5,
+        "title": "You argue with colleague5",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
+        "icon": "🤪"
+    },
+    {
+        "id": 6,
+        "title": "You argue with colleague6",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
+        "icon": "😏"
+    }
+]
+
+
