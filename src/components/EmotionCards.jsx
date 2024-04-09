@@ -6,13 +6,14 @@ import styles from "../styles/emotionsCards.module.css";
 // !3rd party
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/all";
+
 
 // !constants
 import emotions from "../constants/emotions.json";
-import { icon1 } from "../assets";
 
 // !assets
+import { icon1 } from "../assets";
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -50,13 +51,10 @@ const EmotionCards = () => {
     );
   }, []);
 
-
   useEffect(() => {
     const elementIcon1 = document.getElementById("eicon1");
 
-    gsap.registerPlugin(MotionPathPlugin);
-
-    var t1 = gsap.timeline({
+    var t2 = gsap.timeline({
       scrollTrigger: {
         trigger: "#eicon1",
         start: "0 60%",
@@ -65,7 +63,7 @@ const EmotionCards = () => {
       },
     });
 
-    t1.to(elementIcon1, {
+    t2.to(elementIcon1, {
       duration: 3,
       rotate: -20,
 
@@ -75,12 +73,12 @@ const EmotionCards = () => {
           { x: 200, y: 20 }, // Control point
           { x: 0, y: 0 }, // Ending point
         ],
-
         curviness: 1,
       },
       opacity: 1,
     });
   }, []);
+
   return (
     <div className={styles.emotions}>
       <div className={styles.emotions_wrapper}>
@@ -119,22 +117,3 @@ const EmotionCards = () => {
 export default EmotionCards;
 
 
-
-// {
-//     "id": 7,
-//     "title": "You argue with colleague7",
-//     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-//     "icon": "🥳"
-// },
-// {
-//     "id": 8,
-//     "title": "You argue with colleague8",
-//     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-//     "icon": "🤩"
-// },
-// {
-//     "id": 9,
-//     "title": "You argue with colleague9",
-//     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-//     "icon": "🧐"
-// }

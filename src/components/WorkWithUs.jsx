@@ -15,14 +15,14 @@ function WorkWithUs() {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: `#sectionTitle`,
+          trigger: `#workwithusTitle`,
           start: "top 70%", // Adjusted start position
           end: "bottom 70%", // Adjusted end position
           toggleActions: "restart none none none",
         },
       })
       .fromTo(
-        `#sectionTitle`,
+        `#workwithusTitle`,
         { x: -200, opacity: 0 },
         { x: 0, opacity: 0.8, duration: .7 }
       )
@@ -49,9 +49,9 @@ function WorkWithUs() {
   }, []);
 
   return (
-    <div className={styles.section10}>
+    <div className={styles.workwithus}>
       <div className={styles.sec10Title}>
-        <h2 id="sectionTitle">Work with us</h2>
+        <h2 id="workwithusTitle">Work with us</h2>
         <h2 id="companyName">ahead</h2>
       </div>
 

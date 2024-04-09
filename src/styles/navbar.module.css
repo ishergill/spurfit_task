@@ -18,14 +18,17 @@
   align-items: center;
   font-weight: 500;
   font-size: 1.1rem;
+  margin-left: 10%;
 }
 
 .navbar #navlinks a {
   text-decoration: none;
   color: black;
+
 }
 .navbar img {
   height: 4rem;
+  
 }
 
 .navbar button {
@@ -41,4 +44,6 @@
   font-family: "Poppins", sans-serif;
   margin-left: 4rem;
   border: none;
+  font-family: Tilt Neon;
+
 }

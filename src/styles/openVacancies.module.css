@@ -1,72 +1,74 @@
 /* styles.module.css */
 
-.section11 {
-    margin: 6rem 0 0 0;
-    height: 30rem;
-  }
-  
-  .section11 h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    width: fit-content;
-  }
-  
-  .cards {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(251, 243, 222);
-    padding: 0.8rem;
-    border-radius: 1rem;
-    transition: all 0.8s;
-    overflow: hidden;
-    height: 11rem;
-    width: 20rem;
-  }
-  
-  .card button {
-    margin-top: 1.5rem;
-    background-color: black;
-    color: white;
-    border-radius: 2rem;
-    padding: 0.5rem 1.5rem;
-    width: fit-content;
-    text-align: center;
-    align-self: flex-start;
-    margin-left: 2rem;
-    border: none;
-    font-family: Tilt Neon;
-    font-size: 1rem;
-    cursor: pointer;
-  
-  }
-  
-  .card:hover {
-    background-color: rgb(237, 214, 158);
-    height: 17rem;
-  }
-  
-  
-  .card-list {
-    padding-left: 1rem;
-  }
-  
-  .card-list li {
-    display: flex;
-    align-items: center;
-  opacity: .8;
-  }
-  
-  .card-list li::before {
-    content: "\2022"; /* Unicode character for bullet point */
-    margin-right: 0.5rem;
-    font-size: 2rem; /* Adjust size of the bullet point */
-    color: black; /* Color of the bullet point */
-  }
-  
+.openvacancies {
+  margin: 6rem 0 0 0;
+  height: 30rem;
+}
+
+.openvacancies h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(251, 243, 222);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  transition: all 0.8s;
+  overflow: hidden;
+  height: 11rem;
+  width: 20rem;
+}
+
+.card button {
+  margin-top: 1.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+  text-align: center;
+  align-self: flex-start;
+  margin-left: 2rem;
+  border: none;
+  font-family: Tilt Neon;
+  /* font-size: 1rem; */
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: rgb(237, 214, 158);
+  height: 17rem;
+}
+
+.card-list {
+  padding-left: 1rem;
+}
+.card div{
+font-size:1.2rem !important;
+
+}
+
+.card-list li {
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.card-list li::before {
+  content: "\2022"; 
+  margin-right: 0.5rem;
+  font-size: 2rem; 
+  color: black; 
+}

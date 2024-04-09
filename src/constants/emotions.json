@@ -1,40 +1,38 @@
 [
-    {
-        "id": 1,
-        "title": "You argue with colleague1",
-        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-        "icon": "😂"
-    },
-    {
-        "id": 2,
-        "title": "You argue with colleague2",
-        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-        "icon": "🤗"
-    },
-    {
-        "id": 3,
-        "title": "You argue with colleague3",
-        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-        "icon": "🥰"
-    },
-    {
-        "id": 4,
-        "title": "You argue with colleague4",
-        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-        "icon": "😤"
-    },
-    {
-        "id": 5,
-        "title": "You argue with colleague5",
-        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-        "icon": "🤪"
-    },
-    {
-        "id": 6,
-        "title": "You argue with colleague6",
-        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur.",
-        "icon": "😏"
-    }
+  {
+    "id": 1,
+    "title": "You argue with a colleague",
+    "body": "You get angry and defensive, instead of staying open and working towards common ground.",
+    "icon": "😂"
+  },
+  {
+    "id": 2,
+    "title": "You get a promotion at work",
+    "body": "You question yourself and wonder when they'll realize you're an unqualified Imposter, instead of trusting yourself & your abilities.",
+    "icon": "🤗"
+  },
+  {
+    "id": 3,
+    "title": "You attend a class reunion",
+    "body": "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
+    "icon": "🥰"
+  },
+  {
+    "id": 4,
+    "title": "You are at a lively dinner party",
+    "body": "You play on your phone, instead of confidently approaching strangers and striking up a chat.",
+    "icon": "😤"
+  },
+  {
+    "id": 5,
+    "title": "You hit dead end in a negotiation",
+    "body": "You get nervous, frazzled, and frustrated, instead of staying optimistic and solution-oriented",
+    "icon": "🤪"
+  },
+  {
+    "id": 6,
+    "title": "You are at a lively dinner party",
+    "body": "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
+    "icon": "😏"
+  }
 ]
-
-

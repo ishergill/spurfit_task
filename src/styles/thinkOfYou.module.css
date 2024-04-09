@@ -1,110 +1,143 @@
-.fullPage{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.full{
-    position: relative;
-    height: 80%;
-    width: 90%;
-    background-color: #fff0e4;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-}
-.icon7{
-    position: absolute;
-    top:-2.7rem;
-    left: 75vw;
-    height: 5.6rem;
-    width: 4srem;
-}
-.icon5{
-    position: absolute;
-    top: 28vw;
-    left: 32vw;
-    height: 1.3rem;
-}
-.icon5_2{
-    position: absolute;
-     top: -12vw; 
-     left: 27vw; 
-    height: 1.3rem;
-}
-.icon6{
-    position: absolute;
-    top: 32vw;
-    left: 30vw;
-    height: 3rem;
+.thinkofyou {
+  margin: 2rem 6rem 0rem 6rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  padding: 5rem 0 5rem 0;
+  box-sizing: border-box;
+  background-color: #edf8fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.title{
-    height: 25%;
-    padding: 10% 0 0 4%;
+.thinkofyouSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: -1.5rem;
+  opacity: 0.2;
 
 }
 
-.mainTitle{
-    margin-top: 1rem;
-    font-size: 3.7rem;
-    font-weight: 700;
-
+.thinkofyouTitle {
+  font-size: 2.8rem;
 }
 
-.lowerSection{
-    display: flex;
-
+.container {
+  opacity: 0;
+margin-top: -1.5rem;
 }
 
-.lowerLeft{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.graycircle{
-    height: 15vw;
-    width: 15vw;
-    border-radius: 100%;
-    background-color: #F6F6F6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.whitecircle{
-    height: 13vw;
-    width: 13vw;
-    border-radius: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.icon8{
-    position: absolute;
-    height: 4vw;
-    top: -1.3vw;
-}
-.img2{
-    height: 8vw;
+.procedureChart {
+  width: 50rem;
+  height: 0.2rem;
+  margin-top: 5rem;
+  background-image: linear-gradient(
+    to right,
+    #e9c882 60%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 30px 0.2rem;
+  background-repeat: repeat-x;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.lowerRight{
-    position: relative;
-    padding: 2rem 7rem 0 0 ;
-    width: 50%;
-
+.procedureStep {
+  display: flex;
+  align-items: center;
+  background: #e1c67d;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  flex-direction: column;
+  padding: 0.2rem;
 }
 
-.lowerRight p{
-font-size: 1.2rem;
-font-weight: 300;
-line-height: 2rem;
-opacity: .6;
-width: 80%;
+.procedureStep span {
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.25rem;
+  line-height: 2.6rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  background: #d88d4e;
+  z-index: 10;
+  
+}
 
+.procedureStep::before {
+  content: ".";
+  display: block;
+  background: #e1c67d;
+  width: 3rem;
+  height: 3rem;
+  transform: translateY(-0.2rem) rotate(45deg);
+  color: transparent;
+  border-radius: 0.4rem;
+  position: absolute;
+}
+
+.procedureStep::after {
+  text-align: center;
+  display: block;
+  width: 30%;
+  font-size: 0.8rem;
+  content: attr(data-text);
+  position: absolute;
+  transform: translateY(4.2rem);
+  color: black;
+  font-weight: bold;
+  opacity: 0.7;
+  line-height: 1.3rem;
+}
+
+.pathChart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+  width: 48rem;
+  height: 16rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 4rem #1c3a4a33;
+}
+
+.pathLine {
+  width: 42rem;
+  height: 0.15rem;
+  background-color: #dde;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pathItem {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+.pathItem::after {
+  content: attr(data-text);
+  font-size: 1.1rem;
+  padding: 0.65rem 1rem;
+  border-radius: 0.75rem;
+  background-color: inherit;
+  color: #fffd;
+  font-weight: bold;
+  position: absolute;
+  transform: translateY(-3.6rem);
+  width: max-content;
+}
+
+.pathItem:nth-of-type(even)::after {
+  transform: translateY(1.8rem);
 }

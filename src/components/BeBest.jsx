@@ -11,7 +11,8 @@ function BeBest() {
         Not having your own emotions under control might be holding you back.
       </p>
       <p>
-      Additionally, not understanding those of others stops you from being parent, friend you can be.
+        Additionally, not understanding those of others stops you from being
+        parent, friend you can be.
       </p>
     </div>
   );
