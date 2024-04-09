@@ -1,0 +1,128 @@
+.section10 {
+    margin: 0 5rem 4rem 5rem;
+    /* height: 70vh; */
+    /* width: 100vw; */
+    border-radius: 1rem;
+    padding: 4rem;
+    background-color: #f3f1ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section10 .sec10Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section10 .sec10Title h2 {
+    font-size: 3rem;
+    width: max-content;
+}
+
+.section10 .sec10Title h2:nth-of-type(2) {
+    color: #8735e4;
+}
+
+.sec10Content {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sec10Info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: white;
+    border-radius: 1.5rem;
+    height: max-content;
+    box-shadow: 0 0.5rem 2rem #221a4e11;
+}
+
+.sec10Info img {
+    height: 3rem;
+    width: max-content;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.sec10Info .sec10Product,
+.sec10Info .sec10About {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.sec10Info h5 {
+    font-size: 1.5rem;
+}
+
+.sec10Info span {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.sec10Info .sec10Product {
+    background: #fef7f1;
+}
+
+.sec10Scroll {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-height: 30rem;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    row-gap: 1.5rem;
+}
+
+/* width */
+.sec10Scroll::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+/* Track */
+.sec10Scroll::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.1rem #dddd;
+}
+
+/* Handle */
+.sec10Scroll::-webkit-scrollbar-thumb {
+    background: #8735e4bb;
+    border-radius: 0.5rem;
+}
+
+/* Handle on hover */
+.sec10Scroll::-webkit-scrollbar-thumb:hover {
+    background: #8735e4;
+}
+
+.sec10ScrollItem {
+    width: calc(100% - 15rem);
+    margin: 0 5rem 0 10rem;
+    background: white;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 2rem #221a4e11;
+}
+
+.sec10ScrollItem h6 {
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}
+
+.sec10ScrollItem span {
+    font-size: 1.1;
+    opacity: 0.8;
+}

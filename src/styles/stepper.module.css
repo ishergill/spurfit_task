@@ -1,0 +1,65 @@
+.full {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperofsteppertitle {
+  display: flex;
+  align-items: center;
+}
+.subTitle {
+  font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+.mainTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.icon3 {
+  height: 3rem;
+  padding-left: 2rem;
+}
+.eventTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.timelineSection {
+  width: 55rem;
+}
+
+.timeline {
+  height: 25rem;
+  width: 40rem;
+  padding: 1rem;
+  margin: 4rem auto 0 auto;
+  overflow-y: scroll;
+}
+
+.timelineContent {
+  width: 100%;
+  display: flex;
+  row-gap: 2rem;
+  flex-direction: column;
+  border-left: solid 0.2rem #795cf0;
+}
+
+.timelineItem {
+  padding-left: 2rem;
+  transform: translateY(-1.4rem);
+}
+
+.timelineItem::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background: #6240f1;
+  transform: translate(-2.6rem, 1.4rem);
+  outline: solid 0.5rem #ccf8;
+}

@@ -1,0 +1,52 @@
+.full {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+.maintitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+.Sbody {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #535458;
+  line-height: 2.2rem;
+}
+.full button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-family: Tilt Neon;
+  letter-spacing: 0.05rem;
+}
+.sign_P {
+  display: flex;
+  opacity: 0.8;
+  align-items: center;
+}
+
+.sign {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.last{
+font-size: .9rem;
+opacity: .8;
+}
