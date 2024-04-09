@@ -16,8 +16,8 @@ function WorkWithUs() {
       .timeline({
         scrollTrigger: {
           trigger: `#workwithusTitle`,
-          start: "top 70%", // Adjusted start position
-          end: "bottom 70%", // Adjusted end position
+          start: "top 70%", 
+          end: "bottom 70%", 
           toggleActions: "restart none none none",
         },
       })

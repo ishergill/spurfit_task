@@ -28,6 +28,7 @@
   overflow: hidden;
   height: 11rem;
   width: 20rem;
+  opacity: 0.8;
 }
 
 .card button {
@@ -47,28 +48,27 @@
 }
 
 .card:hover {
-  background-color: rgb(237, 214, 158);
+  opacity: 1;
   height: 17rem;
 }
 
 .card-list {
   padding-left: 1rem;
 }
-.card div{
-font-size:1.2rem !important;
-
+.card div {
+  font-size: 1.2rem !important;
 }
 
 .card-list li {
   display: flex;
   align-items: center;
-  opacity: 0.8;
+  opacity: 0.9;
   font-size: 0.9rem;
 }
 
 .card-list li::before {
-  content: "\2022"; 
+  content: "\2022";
   margin-right: 0.5rem;
-  font-size: 2rem; 
-  color: black; 
+  font-size: 2rem;
+  color: black;
 }

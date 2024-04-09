@@ -9,7 +9,7 @@ import styles from "../styles/stepper.module.css";
 // !3rd party
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/all";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { icon3 } from "../assets";
 
 function Stepper() {
@@ -25,7 +25,7 @@ function Stepper() {
     steps.forEach((_, index) => {
       const id = `timelineItem${index + 1}`;
       gsap.set(`#${id}`, { opacity: 0.1 });
-      tl.to(`#${id}`, { opacity: 0.9 }, `-=${0.5 - index * 0.2}`);
+      tl.to(`#${id}`, { opacity: 1 }, `-=${0.5 - index * 0.2}`);
     });
 
     ScrollTrigger.create({
@@ -75,20 +75,19 @@ function Stepper() {
 
     t1.to(elementIcon1, {
       duration: 3,
-      rotate: -20,
-
+      rotation: -20, 
       motionPath: {
         path: [
           { x: 300, y: 0 }, // Starting point
           { x: 200, y: 20 }, // Control point
           { x: 0, y: 0 }, // Ending point
         ],
-
         curviness: 1,
       },
       opacity: 1,
     });
   }, []);
+  
   return (
     <div className={styles.full}>
       <div className={styles.timelineSection}>
@@ -104,11 +103,11 @@ function Stepper() {
 
         <div className={styles.timeline}>
           <div className={styles.timelineContent}>
-            {steps?.map((event) => (
+            {steps?.map((event, index) => (
               <div
                 key={event?.id}
                 className={styles.timelineItem}
-                id={`timelineItem${event?.id + 1}`}
+                id={`timelineItem${index + 1}`}
               >
                 <div className={styles.eventTitle}>{event.title}</div>
                 <span className={styles.description}>{event.description}</span>

@@ -20,8 +20,8 @@ const Header = () => {
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: `#icon1`,
-        start: "0 90%",
-        end: "0px 80%",
+        start: "top 90%", 
+        end: "top 80%", 
         toggleActions: "restart none none none",
         duration: 3,
       },
@@ -30,8 +30,8 @@ const Header = () => {
     const t2 = gsap.timeline({
       scrollTrigger: {
         trigger: `#icon1`,
-        start: "0 90%",
-        end: "0px 80%",
+        start: "top 90%", 
+        end: "top 80%", 
         toggleActions: "restart none none none",
         duration: 3,
       },
@@ -40,8 +40,8 @@ const Header = () => {
     const t3 = gsap.timeline({
       scrollTrigger: {
         trigger: `#icon1`,
-        start: "0 90%",
-        end: "0px 80%",
+        start: "top 90%", 
+        end: "top 80%", 
         toggleActions: "restart none none none",
         duration: 3,
       },
@@ -50,8 +50,8 @@ const Header = () => {
     const t4 = gsap.timeline({
       scrollTrigger: {
         trigger: `#icon1`,
-        start: "0 80%",
-        end: "0px 80%",
+        start: "top 80%", 
+        end: "top 80%", 
         toggleActions: "restart none none none",
         duration: 3,
       },

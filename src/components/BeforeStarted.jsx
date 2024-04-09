@@ -11,12 +11,10 @@ const BeforeStarted = () => {
   const teamAheadRef = useRef(null);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger); 
 
-    // Animation for team text
     const teamAheadText = teamAheadRef.current;
 
-    // Function to animate text printing
     const animateText = (element, text) => {
       // Clear existing text
       element.textContent = "";
