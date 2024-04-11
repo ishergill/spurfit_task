@@ -9,6 +9,9 @@
   font-size: 3rem;
   margin-bottom: 2rem;
   width: fit-content;
+  display: flex;
+align-items: center;
+gap: 2rem;
 }
 
 .cards {

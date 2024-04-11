@@ -3,7 +3,6 @@ import React, { useState } from "react";
 function AddVacanciesform({ setCurrVcancies, setShowModal, currElement, onEdit }) {
   const [values, setValue] = useState(currElement);
 
-  // Update the form to differentiate between editing and adding a new vacancy
   const isEdit = !!currElement;
 
   return (
@@ -42,7 +41,6 @@ function AddVacanciesform({ setCurrVcancies, setShowModal, currElement, onEdit }
           }
         />
         <br />
-        {/* Show different text on the button based on whether it's editing or adding */}
         <button
           onClick={() => {
             if (
