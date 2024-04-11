@@ -16,6 +16,11 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
+  overflow-x: scroll;
+  padding:0 8rem;
+  margin: 0 5rem;
+  width: 80%;
+  max-width: 80%;
 }
 
 .card {
@@ -26,8 +31,9 @@
   border-radius: 1rem;
   transition: all 0.8s;
   overflow: hidden;
-  height: 11rem;
+  height: 15rem;
   width: 20rem;
+  min-width: 20rem;
   opacity: 0.8;
 }
 
@@ -49,7 +55,7 @@
 
 .card:hover {
   opacity: 1;
-  height: 17rem;
+  height: 20rem;
 }
 
 .card-list {

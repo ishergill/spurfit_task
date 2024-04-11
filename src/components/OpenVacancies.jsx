@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // !styles
 import styles from "../styles/openVacancies.module.css";
@@ -6,87 +6,110 @@ import styles from "../styles/openVacancies.module.css";
 // !3rd party
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AddVacanciesform from "./AddVacanciesform";
 gsap.registerPlugin(ScrollTrigger);
 
-function OpenVacancies() {
-  useEffect(() => {
-    var t1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: `#openvacancies h2`, 
-        start: "0 80%",
-        end: "0px 80%",
-        toggleActions: "restart none reset reverse",
-      },
-    });
-  
+function OpenVacancies({ isAdmin }) {
+  const [showModal, setShowModal] = useState(false);
+  const [currVcancies, setCurrVcancies] = useState([
+    {
+      postion: "Senior Full-Stack Engineer",
+      type: "Full time",
+      salary: 10000,
+    },
+    {
+      postion: "Senior Full-Stack Engineer",
+      type: "Full time",
+      salary: 10000,
+    },
+    {
+      postion: "Senior Full-Stack Engineer",
+      type: "Full time",
+      salary: 10000,
+    },
+  ]);
+  const [currElement, setCurrElement] = useState({});
 
-    t1.fromTo(
-      `#openvacancies h2`, 
-      { x: -200, opacity: 0, fontSize: 0 },
-      { x: 300, opacity: 1, duration: 0.6, fontSize: "3rem" }
+  const deleteVacancy = (index) => {
+    setCurrVcancies((prev) => prev.filter((_, i) => i !== index));
+  };
+
+  const editVacancy = (editedVacancy) => {
+    setCurrVcancies((prev) =>
+      prev.map((vacancy) =>
+        vacancy === currElement ? { ...editedVacancy } : vacancy
+      )
     );
-  
-    t1.to(`.${styles.openvacancies} h2`, { x: 250, duration: 0.3 });
-  }, []);
-  
+  };
 
   return (
     <div className={styles.openvacancies} id="openvacancies">
-      <h2>Open vacancies</h2>
+      {/* your other JSX */}
       <div className={styles.cards}>
-        <div className={styles.card}>
-          <div
-            style={{
-              fontSize: "1.4rem",
-              padding: "1rem 0 0 0.5rem",
-              fontWeight: "600",
-            }}
-          >
-            Senior Full-Stack Engineer
-          </div>
-          <ul className={styles["card-list"]}>
-            <li>Full-time position</li>
-            <li>Berlin or remote</li>
-            <li>€65-85K, 0.5-1.5% equity share options</li>
-          </ul>
-          <button>See Details</button>
-        </div>
-        <div className={styles.card}>
-          <div
-            style={{
-              fontSize: "1.4rem",
-              padding: "1rem 0 0 0.5rem",
-              fontWeight: "600",
-            }}
-          >
-            Senior Design
-          </div>
-          <ul className={styles["card-list"]}>
-            <li>Full-time position</li>
-            <li>Berlin or remote</li>
-            <li>€40-55K, 0.25-.50% equity share options</li>
-          </ul>
-          <button>See Details</button>
-        </div>
+        {currVcancies.length > 0 ? (
+          <>
+            {currVcancies.map((vac, index) => (
+              <div className={styles.card} key={index}>
+                <div
+                  style={{
+                    fontSize: "1.4rem",
+                    padding: "1rem 0 0 0.5rem",
+                    fontWeight: "600",
+                  }}
+                >
+                  {vac?.postion}
+                </div>
+                {isAdmin ? (
+                  <div>
+                    <button
+                      onClick={() => {
+                        setCurrElement(vac);
+                        setShowModal(true);
+                      }}
+                      style={{
+                        background: "green",
+                      }}
+                    >
+                      Edit
+                    </button>
+                    <button
+                      style={{
+                        background: "red",
+                      }}
+                      onClick={() => deleteVacancy(index)}
+                    >
+                      Delete
+                    </button>
+                  </div>
+                ) : null}
 
-        <div className={styles.card}>
-          <div
+                <ul className={styles["card-list"]}>
+                  <li>{vac?.type}</li>
+                  <li>Berlin or remote</li>
+                  <li>${vac?.salary}</li>
+                </ul>
+                <button>See Details</button>
+              </div>
+            ))}
+          </>
+        ) : (
+          <p
             style={{
-              fontSize: "1.4rem",
-              padding: "1rem 0 0 0.5rem",
-              fontWeight: "600",
+              color: "black",
             }}
           >
-            Superstar intern
-          </div>
-          <ul className={styles["card-list"]}>
-            <li>Full-time position</li>
-            <li>Berlin or remote</li>
-            <li>€20-24K, 0.5-1.5% equity share options</li>
-          </ul>
-          <button>See Details</button>
-        </div>
+            Nothing here yet...
+          </p>
+        )}
       </div>
+      {showModal && (
+        <AddVacanciesform
+          setCurrVcancies={setCurrVcancies}
+          setShowModal={setShowModal}
+          currElement={currElement}
+          onEdit={editVacancy}
+        />
+      )}
     </div>
   );
 }
