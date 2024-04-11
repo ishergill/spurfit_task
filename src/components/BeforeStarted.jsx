@@ -1,17 +1,20 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // !3rd party
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // !styles
 import styles from "../styles/beforeStarted.module.css";
+import StartTest from "./StartTest";
 
 const BeforeStarted = () => {
   const teamAheadRef = useRef(null);
 
+  const [showStartTest, setShowStartTest] = useState();
+
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger); 
+    gsap.registerPlugin(ScrollTrigger);
 
     const teamAheadText = teamAheadRef.current;
 
@@ -58,20 +61,28 @@ const BeforeStarted = () => {
   }, []);
 
   return (
-    <div className={styles.full}>
-      <div className={styles.subtitle}> We take privacy seriously </div>
-      <div className={styles.maintitle}> Before you get started </div>
-      <div className={styles.Sbody}>
-        "We won't share your answers with anyone (and won't ever tell <br /> you
-        which friends said what about you)"
+    <>
+      <div className={styles.full}>
+        <div className={styles.subtitle}> We take privacy seriously </div>
+        <div className={styles.maintitle}> Before you get started </div>
+        <div className={styles.Sbody}>
+          "We won't share your answers with anyone (and won't ever tell <br />{" "}
+          you which friends said what about you)"
+        </div>
+        <div className={styles.sign_P}>
+          <p>with love, </p>
+          <p ref={teamAheadRef} className={styles.sign}></p>
+        </div>
+        <button
+          id="start_btn"
+          onClick={() => setShowStartTest((prev) => !prev)}
+        >
+          Start a test
+        </button>
+        <div className={styles.last}>Takes only 5 minutes</div>
+        {showStartTest ? <StartTest  setShowStartTest={setShowStartTest}/> : null}
       </div>
-      <div className={styles.sign_P}>
-        <p>with love, </p>
-        <p ref={teamAheadRef} className={styles.sign}></p>
-      </div>
-      <button id="start_btn">Start a test</button>
-      <div className={styles.last}>Takes only 5 minutes</div>
-    </div>
+    </>
   );
 };
 

@@ -32,6 +32,7 @@
   border: none;
   font-family: Tilt Neon;
   letter-spacing: 0.05rem;
+  cursor: pointer;
 }
 .sign_P {
   display: flex;

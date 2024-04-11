@@ -64,7 +64,7 @@ function OpenVacancies({ isAdmin }) {
   return (
     <div className={styles.openvacancies} id="openvacancies">
       <h2>
-        Open vacancies{""}
+        Open vacancies{}
         {isAdmin ? (
           <button
             className="add--btn"
@@ -137,6 +137,7 @@ function OpenVacancies({ isAdmin }) {
           setShowModal={setShowModal}
           currElement={currElement}
           onEdit={editVacancy}
+          setCurrElement={setCurrElement}
         />
       )}
     </div>
